@@ -77,7 +77,7 @@
 
         .hero h1 {
             font-size: 3rem;
-            margin-bottom: 1rem;
+            margin-bottom: 1.5rem;
             color: var(--text-primary);
         }
 
@@ -85,17 +85,18 @@
             color: var(--accent);
         }
 
-        .hero p {
-            font-size: 1.2rem;
+        .hero-bio {
+            font-size: 1.1rem;
             color: var(--text-secondary);
-            max-width: 700px;
-            margin-bottom: 2rem;
+            max-width: 800px;
+            margin-bottom: 1.5rem;
         }
 
         .btn-group {
             display: flex;
             gap: 1rem;
             flex-wrap: wrap;
+            margin-top: 2rem;
         }
 
         .btn {
@@ -243,7 +244,12 @@
         <!-- Hero / About -->
         <section id="about" class="hero" style="border-top: none;">
             <h1>Hi, I'm <span>Ameya Muralidharan</span> 👋</h1>
-            <p>Mechanical Engineering student at <strong>Franklin W. Olin College of Engineering (Class of 2029)</strong> with a 3.94 GPA. Passionate about hardware design, mechanisms, fluid dynamics, and building innovative systems.</p>
+            <p class="hero-bio">
+                My life has been underscored by curiosity; a curiosity that drives every venture. As a Mechanical Engineering student at <strong>Franklin W. Olin College of Engineering (Class of 2029)</strong> with an affinity for math and science in their purest forms, I seek to understand the ‘hidden’ systems that make up the world we live in, and harness that understanding to enact change in the world. My coursework balances a technical, hands-on education with a comprehensive amount of theory. I am interested in dynamic systems theory and have a passion for mechanical machines of bygone eras—specifically typewriters!
+            </p>
+            <p class="hero-bio">
+                Though an engineer by trade, I seek a holistic education. There are many intersections between the humanities and STEM fields that should be explored and celebrated, and I seek to find that harmony in my work. I do this through my extracurricular activities, projects, and additional coursework. I enjoy writing, reading, sketching, and making music. With an educational concentration in philosophy, I seek to understand the world from different perspectives, and in turn become a better engineer and person.
+            </p>
             <div class="btn-group">
                 <a href="#contact" class="btn">Get in Touch</a>
                 <a href="Ameya_Muralidharan_Resume.pdf" target="_blank" class="btn btn-outline">View Resume</a>
@@ -279,4 +285,102 @@
                     <div>
                         <h3>Bike Light Circuit & Housing</h3>
                         <div class="card-date">2026</div>
-                        <p>Engine
+                        <p>Engineered an Arduino UNO circuit with customizable toggle light modes and an integrated infrared distance sensor, housed in a custom mechanical enclosure.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <h3>Organic LED (OLED) Device</h3>
+                        <div class="card-date">2026</div>
+                        <p>Designed and tested a functional OLED device, conducting thorough analysis of its underlying electrical, physical, and chemical properties.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <h3>Sea Anemone Animatronic</h3>
+                        <div class="card-date">2026</div>
+                        <p>Designed the mechanical housing for DC and servo motors along with a tentacle curling mechanism, integrating IR distance sensors and microphone response triggers.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience & Research -->
+        <section id="experience">
+            <h2>Experience & Research</h2>
+            <div class="grid">
+                <div class="card">
+                    <div>
+                        <h3>Active Matter and Fluid Mechanics Lab</h3>
+                        <div class="card-date">Sept 2026 – Present</div>
+                        <p>Conducting research around non-linear dynamics in chaotic fluid environments through hands-on experimentation, literature review, modeling, and simulations.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <h3>Uncertainty and Research Lab</h3>
+                        <div class="card-date">March 2026 – Present</div>
+                        <p>Investigating student understanding to improve engineering education by collecting field notes, analyzing conceptual comprehension, and reviewing philosophical literature.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <h3>Shop Assistant – ShopBot CNC Router</h3>
+                        <div class="card-date">Aug 2026 – Present</div>
+                        <p>Conducting user training, maintaining shop safety/workspace accessibility, and designing an innovative tool-tracking system to streamline maintenance.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <h3>Academic Resource Co-Designer</h3>
+                        <div class="card-date">Aug 2026 – Present</div>
+                        <p>Coaching peers with tactics like co-working frameworks. Researching and implementing institutional systems to keep students on track toward academic goals.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section id="skills">
+            <h2>Skills & Equipment</h2>
+            
+            <div class="skills-category">
+                <h3>Equipment</h3>
+                <div class="skills-list">
+                    <span class="skill-tag">Scanning Electron Microscope (SEM)</span>
+                    <span class="skill-tag">3D Prototyping</span>
+                    <span class="skill-tag">Metal Mill</span>
+                    <span class="skill-tag">Metal Lathe</span>
+                    <span class="skill-tag">Soldering</span>
+                    <span class="skill-tag">ShopBot CNC Router</span>
+                    <span class="skill-tag">Woodworking (Spindle Lathe, Hand Tools, Saws)</span>
+                </div>
+            </div>
+
+            <div class="skills-category">
+                <h3>Software</h3>
+                <div class="skills-list">
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">Java</span>
+                    <span class="skill-tag">R</span>
+                    <span class="skill-tag">MATLAB</span>
+                    <span class="skill-tag">OnShape</span>
+                    <span class="skill-tag">SolidWorks</span>
+                    <span class="skill-tag">KiCAD</span>
+                    <span class="skill-tag">Fusion CAM</span>
+                    <span class="skill-tag">Arduino IDE</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <h2>Let's Connect</h2>
+        <p style="margin: 1rem 0;">I am always open to exploring new engineering opportunities, collaborations, or discussions.</p>
+        <p>Email: <a href="mailto:ameya.murali@outlook.com">ameya.murali@outlook.com</a></p>
+        <p style="margin-top: 0.5rem;">Phone: +1 (832) 353-5989</p>
+        <p style="margin-top: 2rem; font-size: 0.85rem;">© 2026 Ameya Muralidharan. Built with GitHub Pages.</p>
+    </footer>
+
+</body>
+</html>
