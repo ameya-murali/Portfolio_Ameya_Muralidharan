@@ -6,15 +6,15 @@
     <title>Ameya Muralidharan — Mechanical Engineering Portfolio</title>
     <style>
         :root {
-            --bg-color: #f7f4ef;          /* Soft warm cream */
-            --card-bg: #eae4db;           /* Muted oatmeal / light beige */
-            --card-hover: #e0d8cc;        /* Slightly deeper beige for hover */
-            --text-primary: #2c2420;      /* Deep espresso brown */
-            --text-secondary: #635750;    /* Muted warm taupe */
-            --accent: #2f4f3e;            /* Deep forest green */
-            --accent-hover: #1f3528;      /* Darker forest green */
-            --caramel: #8c6d53;           /* Warm accent brown */
-            --border-color: #d8cebf;      /* Subtle border line */
+            --bg-color: #f7f4ef;
+            --card-bg: #eae4db;
+            --card-hover: #e0d8cc;
+            --text-primary: #2c2420;
+            --text-secondary: #635750;
+            --accent: #2f4f3e;
+            --accent-hover: #1f3528;
+            --caramel: #8c6d53;
+            --border-color: #d8cebf;
         }
 
         * {
@@ -71,7 +71,6 @@
             margin: 0 auto;
         }
 
-        /* Hero Section */
         .hero {
             padding: 4rem 0;
         }
@@ -116,7 +115,6 @@
             background-color: var(--accent-hover);
         }
 
-        /* Section Styling */
         section {
             padding: 3.5rem 0;
             border-top: 1px solid var(--border-color);
@@ -128,7 +126,6 @@
             color: var(--accent);
         }
 
-        /* Grid Layout */
         .grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
@@ -170,7 +167,6 @@
             margin-bottom: 1.5rem;
         }
 
-        /* Skills */
         .skills-category {
             margin-bottom: 2rem;
         }
@@ -197,7 +193,6 @@
             border: 1px solid var(--border-color);
         }
 
-        /* Footer / Contact */
         footer {
             max-width: 1000px;
             margin: 0 auto;
@@ -210,4 +205,161 @@
         footer a {
             color: var(--accent);
             text-decoration: none;
-            font-weight
+            font-weight: 600;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="#" class="logo">Ameya.dev</a>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#experience">Experience & Research</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about" class="hero" style="border-top: none;">
+            <h1>Hi, I'm <span>Ameya Muralidharan</span></h1>
+            <p class="hero-bio">
+                I am a Mechanical Engineering student at <strong>Franklin W. Olin College of Engineering (Class of 2029)</strong> passionate about <strong>dynamic systems, intricate mechanisms, and design</strong>—from modern tech to vintage typewriters. Seeking a holistic education that bridges STEM and the humanities, I combine technical rigor with philosophy, writing, and art to build innovative solutions.
+            </p>
+            <div class="btn-group">
+                <a href="#contact" class="btn">Get in Touch</a>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Featured Projects</h2>
+            <div class="grid">
+                <div class="card">
+                    <div>
+                        <h3>Automata – “Ameya Typewriter”</h3>
+                        <div class="card-date">2026</div>
+                        <p>Designed and built an automata machine inspired by a classic typewriter utilizing intricate cam-and-follower motion mechanisms.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <h3>Kinematic Sculpture – “The Arctic”</h3>
+                        <div class="card-date">2026</div>
+                        <p>Designed bear mechanisms using beveled gears. Applied woodworking, laser cutting, and precise joinery to construct the custom display box and bear arm.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <h3>Kinematic Sculpture – “Zoltar”</h3>
+                        <div class="card-date">2026</div>
+                        <p>Designed the Golden ticket using a slider crank mechanism and handled chain tensioning. Contributed to assembling the entire mechanical system featuring beveled gears and a Geneva wheel.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <h3>Bike Light Circuit & Housing</h3>
+                        <div class="card-date">2026</div>
+                        <p>Engineered an Arduino UNO circuit with customizable toggle light modes and an integrated infrared distance sensor, housed in a custom mechanical enclosure.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <h3>Organic LED (OLED) Device</h3>
+                        <div class="card-date">2026</div>
+                        <p>Designed and tested a functional OLED device, conducting thorough analysis of its underlying electrical, physical, and chemical properties.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <h3>Sea Anemone Animatronic</h3>
+                        <div class="card-date">2026</div>
+                        <p>Designed the mechanical housing for DC and servo motors along with a tentacle curling mechanism, integrating IR distance sensors and microphone response triggers.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience">
+            <h2>Experience & Research</h2>
+            <div class="grid">
+                <div class="card">
+                    <div>
+                        <h3>Active Matter and Fluid Mechanics Lab</h3>
+                        <div class="card-date">Sept 2026 – Present</div>
+                        <p>Conducting research around non-linear dynamics in chaotic fluid environments through hands-on experimentation, literature review, modeling, and simulations.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <h3>Uncertainty and Research Lab</h3>
+                        <div class="card-date">March 2026 – Present</div>
+                        <p>Investigating student understanding to improve engineering education by collecting field notes, analyzing conceptual comprehension, and reviewing philosophical literature.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <h3>Shop Assistant – ShopBot CNC Router</h3>
+                        <div class="card-date">Aug 2026 – Present</div>
+                        <p>Conducting user training, maintaining shop safety/workspace accessibility, and designing an innovative tool-tracking system to streamline maintenance.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <h3>Academic Resource Co-Designer</h3>
+                        <div class="card-date">Aug 2026 – Present</div>
+                        <p>Coaching peers with tactics like co-working frameworks. Researching and implementing institutional systems to keep students on track toward academic goals.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Skills & Equipment</h2>
+            
+            <div class="skills-category">
+                <h3>Equipment</h3>
+                <div class="skills-list">
+                    <span class="skill-tag">Scanning Electron Microscope (SEM)</span>
+                    <span class="skill-tag">3D Prototyping</span>
+                    <span class="skill-tag">Metal Mill</span>
+                    <span class="skill-tag">Metal Lathe</span>
+                    <span class="skill-tag">Soldering</span>
+                    <span class="skill-tag">ShopBot CNC Router</span>
+                    <span class="skill-tag">Woodworking (Spindle Lathe, Hand Tools, Saws)</span>
+                </div>
+            </div>
+
+            <div class="skills-category">
+                <h3>Software</h3>
+                <div class="skills-list">
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">Java</span>
+                    <span class="skill-tag">R</span>
+                    <span class="skill-tag">MATLAB</span>
+                    <span class="skill-tag">OnShape</span>
+                    <span class="skill-tag">SolidWorks</span>
+                    <span class="skill-tag">KiCAD</span>
+                    <span class="skill-tag">Fusion CAM</span>
+                    <span class="skill-tag">Arduino IDE</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <h2>Let's Connect</h2>
+        <p style="margin: 1rem 0;">I am always open to exploring new engineering opportunities, collaborations, or discussions.</p>
+        <p>Email: <a href="mailto:ameya.murali@outlook.com">ameya.murali@outlook.com</a></p>
+        <p style="margin-top: 0.5rem;">Phone: +1 (832) 353-5989</p>
+        <p style="margin-top: 0.5rem;">LinkedIn: <a href="https://www.linkedin.com/in/ameya-muralidharan-67940b388" target="_blank">View Profile</a></p>
+        <p style="margin-top: 2rem; font-size: 0.85rem;">© 2026 Ameya Muralidharan. Built with GitHub Pages.</p>
+    </footer>
+
+</body>
+</html>
