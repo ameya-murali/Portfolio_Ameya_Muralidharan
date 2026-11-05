@@ -6,12 +6,14 @@
     <title>Ameya Muralidharan — Mechanical Engineering Portfolio</title>
     <style>
         :root {
-            --bg-color: #0f172a;
-            --card-bg: #1e293b;
-            --text-primary: #f8fafc;
-            --text-secondary: #94a3b8;
-            --accent: #38bdf8;
-            --accent-hover: #0ea5e9;
+            --bg-color: #f7f4ef;          /* Soft warm cream */
+            --card-bg: #eae4db;           /* Muted oatmeal / light beige */
+            --card-hover: #e0d8cc;        /* Slightly deeper beige for hover */
+            --text-primary: #2c2420;      /* Deep espresso brown */
+            --text-secondary: #635750;    /* Muted warm taupe */
+            --accent: #8c6d53;            /* Rich warm caramel brown */
+            --accent-hover: #6e533f;      /* Darker caramel */
+            --border-color: #d8cebf;      /* Subtle border line */
         }
 
         * {
@@ -99,7 +101,7 @@
         .btn {
             display: inline-block;
             background-color: var(--accent);
-            color: var(--bg-color);
+            color: #ffffff;
             padding: 0.75rem 1.5rem;
             border-radius: 6px;
             font-weight: bold;
@@ -118,19 +120,20 @@
         }
 
         .btn-outline:hover {
-            background-color: rgba(56, 189, 248, 0.1);
-            color: var(--accent);
+            background-color: rgba(140, 109, 83, 0.1);
+            color: var(--accent-hover);
         }
 
         /* Section Styling */
         section {
             padding: 3.5rem 0;
-            border-top: 1px solid #334155;
+            border-top: 1px solid var(--border-color);
         }
 
         section h2 {
             font-size: 2rem;
             margin-bottom: 2rem;
+            color: var(--text-primary);
         }
 
         /* Grid Layout */
@@ -144,14 +147,16 @@
             background-color: var(--card-bg);
             padding: 1.75rem;
             border-radius: 8px;
-            transition: transform 0.2s;
+            transition: transform 0.2s, background-color 0.2s;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            border: 1px solid var(--border-color);
         }
 
         .card:hover {
             transform: translateY(-4px);
+            background-color: var(--card-hover);
         }
 
         .card h3 {
@@ -163,7 +168,7 @@
         .card-date {
             color: var(--accent);
             font-size: 0.85rem;
-            font-weight: 500;
+            font-weight: 600;
             margin-bottom: 1rem;
         }
 
@@ -196,7 +201,8 @@
             padding: 0.5rem 1rem;
             border-radius: 4px;
             font-size: 0.9rem;
-            font-weight: 500;
+            font-weight: 600;
+            border: 1px solid var(--border-color);
         }
 
         /* Footer / Contact */
@@ -204,7 +210,7 @@
             max-width: 1000px;
             margin: 0 auto;
             padding: 4rem 0;
-            border-top: 1px solid #334155;
+            border-top: 1px solid var(--border-color);
             text-align: center;
             color: var(--text-secondary);
         }
@@ -212,6 +218,11 @@
         footer a {
             color: var(--accent);
             text-decoration: none;
+            font-weight: 600;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -235,7 +246,6 @@
             <p>Mechanical Engineering student at <strong>Franklin W. Olin College of Engineering (Class of 2029)</strong> with a 3.94 GPA. Passionate about hardware design, mechanisms, fluid dynamics, and building innovative systems.</p>
             <div class="btn-group">
                 <a href="#contact" class="btn">Get in Touch</a>
-                <!-- Link your PDF resume file here once uploaded to the repo -->
                 <a href="Ameya_Muralidharan_Resume.pdf" target="_blank" class="btn btn-outline">View Resume</a>
             </div>
         </section>
@@ -334,3 +344,19 @@
                     <span class="skill-tag">Scanning Electron Microscope (SEM)</span>
                     <span class="skill-tag">3D Prototyping</span>
                     <span class="skill-tag">Metal Mill</span>
+                    <span class="skill-tag">Metal Lathe</span>
+                    <span class="skill-tag">Soldering</span>
+                    <span class="skill-tag">ShopBot CNC Router</span>
+                    <span class="skill-tag">Woodworking (Spindle Lathe, Saws)</span>
+                </div>
+            </div>
+
+            <div class="skills-category">
+                <h3>Software & Design</h3>
+                <div class="skills-list">
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">Java</span>
+                    <span class="skill-tag">R</span>
+                    <span class="skill-tag">MATLAB</span>
+                    <span class="skill-tag">OnShape</span>
+                    <span class="skill-tag">Solid
